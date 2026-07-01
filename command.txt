@@ -1,1 +1,1 @@
-git log | Comando git para validar histórico de commit | git log --oneline histórico resumido
+git log | Comando git para validar histórico de commit | git log --oneline histórico resumido | git --no-pager log sem mostrar tela do logs
