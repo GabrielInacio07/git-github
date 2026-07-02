@@ -1,3 +1,7 @@
 git log Comando git para validar histórico de commit | git log --oneline histórico resumido | git --no-pager log sem mostrar tela do logs
 
 git checkout serve para trocar de branch ou voltar o estado de arquivos/commits no Git.
+
+git merge pusha o branch desejado para o branch de destino (o branch que está atual)
+
+fluxo branch -> checkout -> criação/modificações dos arquivos -> git merge 
