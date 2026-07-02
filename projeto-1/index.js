@@ -1,3 +1,5 @@
 const hello = 'Hello Word';
 
-console.log(hello);
+const teste = 'teste';
+
+console.log(hello,teste);
