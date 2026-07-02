@@ -1,3 +1,2 @@
-const hello = 'Hello Word';
+console.log("Hello word")
 
-console.log(hello);
