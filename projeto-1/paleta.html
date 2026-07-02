@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="auren-ld" style="border-radius: 8px; border: 0.5px solid var(--color-border-tertiary); overflow: hidden;">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+            #auren-ld {
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                color: #1C1917;
+            }
+
+            .a-mono {
+                font-family: 'IBM Plex Mono', monospace;
+            }
+
+            .section-label {
+                font-size: 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .08em;
+                color: #92723A;
+                margin: 0 0 16px;
+            }
+
+            .sub-label {
+                font-size: 11px;
+                font-weight: 600;
+                color: #A8A29E;
+                margin: 0 0 8px;
+            }
+
+            .mode-col {
+                flex: 1;
+                padding: 20px;
+                border-radius: 4px;
+            }
+
+            .mode-label {
+                font-size: 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .06em;
+                margin: 0 0 14px;
+            }
+
+            .swatch-row {
+                display: flex;
+                gap: 3px;
+                margin-bottom: 10px;
+            }
+
+            .swatch {
+                height: 32px;
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 9px;
+                font-weight: 500;
+            }
+
+            .swatch:first-child {
+                border-radius: 3px 0 0 3px;
+            }
+
+            .swatch:last-child {
+                border-radius: 0 3px 3px 0;
+            }
+
+            .tag-demo {
+                display: inline-flex;
+                align-items: center;
+                border-radius: 2px;
+                padding: 3px 9px 3px 7px;
+                font-size: 11px;
+                font-weight: 600;
+                border-left: 3px solid;
+            }
+
+            .comp-row {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        </style>
+
+        <div
+            style="background: #0C1825; padding: 14px 32px; display: flex; justify-content: space-between; align-items: center;">
+            <span
+                style="font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.4); letter-spacing: .06em; text-transform: uppercase;">Auren
+                — Light &amp; dark mode</span>
+        </div>
+
+        <div style="background: #F0EDE7; padding: 24px 24px 0;">
+            <p class="section-label">01 Paleta lado a lado</p>
+            <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+
+                <div class="mode-col" style="background: #FAFAF9; border: 1px solid #E2DFD9;">
+                    <p class="mode-label" style="color: #57534E;">Light mode</p>
+
+                    <p class="sub-label">Superfícies</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #FAFAF9; color: #A8A29E; border: 1px solid #E2DFD9;">bg
+                        </div>
+                        <div class="swatch" style="background: #FFFFFF; color: #A8A29E; border: 1px solid #E2DFD9;">
+                            surface</div>
+                        <div class="swatch" style="background: #F0EDE7; color: #A8A29E;">surface-2</div>
+                        <div class="swatch" style="background: #E2DFD9; color: #57534E;">border</div>
+                    </div>
+
+                    <p class="sub-label">Texto</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #1C1917; color: #fff;">primary</div>
+                        <div class="swatch" style="background: #57534E; color: #fff;">secondary</div>
+                        <div class="swatch" style="background: #A8A29E; color: #fff;">disabled</div>
+                    </div>
+
+                    <p class="sub-label">Navy</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #0C1825; color: rgba(255,255,255,0.6);">900</div>
+                        <div class="swatch" style="background: #15263B; color: rgba(255,255,255,0.6);">800</div>
+                        <div class="swatch" style="background: #1E3A5F; color: rgba(255,255,255,0.6);">700</div>
+                        <div class="swatch" style="background: #E8EDF2; color: #15263B;">100</div>
+                    </div>
+
+                    <p class="sub-label">Gold</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #7A5E2F; color: rgba(255,255,255,0.6);">700</div>
+                        <div class="swatch" style="background: #92723A; color: rgba(255,255,255,0.6);">600</div>
+                        <div class="swatch" style="background: #C9A45E; color: rgba(0,0,0,0.4);">400</div>
+                        <div class="swatch" style="background: #F5EDE0; color: #92723A;">100</div>
+                    </div>
+
+                    <p class="sub-label">Feedback</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #ECFDF3; color: #15803D; font-weight: 600;">ok</div>
+                        <div class="swatch" style="background: #FEF2F2; color: #B91C1C; font-weight: 600;">erro</div>
+                        <div class="swatch" style="background: #FFFBEB; color: #B45309; font-weight: 600;">alerta</div>
+                        <div class="swatch" style="background: #F0F9FF; color: #0369A1; font-weight: 600;">info</div>
+                    </div>
+                </div>
+
+                <div class="mode-col" style="background: #121010; border: 1px solid #3A352C;">
+                    <p class="mode-label" style="color: #B5AFA4;">Dark mode</p>
+
+                    <p class="sub-label" style="color: #6B655B;">Superfícies</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #121010; color: #6B655B; border: 1px solid #3A352C;">bg
+                        </div>
+                        <div class="swatch" style="background: #1C1917; color: #6B655B; border: 1px solid #3A352C;">
+                            surface</div>
+                        <div class="swatch" style="background: #242019; color: #6B655B;">surface-2</div>
+                        <div class="swatch" style="background: #3A352C; color: #B5AFA4;">border</div>
+                    </div>
+
+                    <p class="sub-label" style="color: #6B655B;">Texto</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #F5F2EC; color: #1C1917;">primary</div>
+                        <div class="swatch" style="background: #B5AFA4; color: #1C1917;">secondary</div>
+                        <div class="swatch" style="background: #6B655B; color: #1C1917;">disabled</div>
+                    </div>
+
+                    <p class="sub-label" style="color: #6B655B;">Navy</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #0A131F; color: rgba(255,255,255,0.4);">900</div>
+                        <div class="swatch" style="background: #15263B; color: rgba(255,255,255,0.4);">800</div>
+                        <div class="swatch" style="background: #6F93B5; color: #0A131F;">pri</div>
+                        <div class="swatch" style="background: #1E2A35; color: #6F93B5;">100</div>
+                    </div>
+
+                    <p class="sub-label" style="color: #6B655B;">Gold</p>
+                    <div class="swatch-row">
+                        <div class="swatch" style="background: #B08C49; color: rgba(0,0,0,0.5);">700</div>
+                        <div class="swatch" style="background: #C9A45E; color: rgba(0,0,0,0.5);">600</div>
+                        <div class="swatch" style="background: #D9B97E; color: rgba(0,0,0,0.4);">400</div>
+                        <div class="swatch" style="background: #2A2110; color: #C9A45E;">100</div>
+</body>
+
+</html>
