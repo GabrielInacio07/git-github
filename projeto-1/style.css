@@ -1,7 +1,11 @@
 body{
-    background-color: rgba(3, 3, 241, 0.438);
+    background-color: rgba(217, 241, 3, 0.61);
 }
 
 h1{
     color: white;
+}
+
+p{
+    color: chocolate;
 }
